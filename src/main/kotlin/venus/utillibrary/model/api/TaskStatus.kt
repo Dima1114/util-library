@@ -1,4 +1,4 @@
-package api.entity
+package venus.utillibrary.model.api
 
 import venus.utillibrary.enumeration.EnumResource
 

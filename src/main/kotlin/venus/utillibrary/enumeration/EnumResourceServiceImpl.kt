@@ -4,12 +4,14 @@ import venus.utillibrary.function.takeOrThrow
 import org.reflections.Reflections
 import venus.utillibrary.security.exceptions.JwtAuthenticationException
 import org.springframework.beans.factory.annotation.Value
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass
 import org.springframework.stereotype.Service
 import venus.utillibrary.enumeration.exception.ResourceNotFoundException
 import venus.utillibrary.service.getUserFromContext
 import java.util.*
 
 @Service
+@ConditionalOnClass(EnumResource::class)
 class EnumResourceServiceImpl(@Value("\${reflection.enum.root-path}") private val rootPackage: String? = null) : EnumResourceService {
 
     override fun getEnumResource(name: String, packageName: String): List<EnumValue> {

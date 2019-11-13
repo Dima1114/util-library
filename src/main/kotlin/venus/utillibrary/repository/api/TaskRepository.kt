@@ -1,7 +1,7 @@
 package venus.utillibrary.repository.api
 
 import venus.utillibrary.model.api.Task
-import api.entity.TaskStatus
+import venus.utillibrary.model.api.TaskStatus
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.data.jpa.repository.EntityGraph
@@ -26,8 +26,8 @@ interface TaskRepository : BaseRepository<Task> {
     @RestResource(exported = false)
     @Transactional
     @Modifying
-    @Query("update Task task set task.status = api.entity.TaskStatus.OVERDUE " +
-            "where task.dueDate < CURRENT_DATE and task.status = api.entity.TaskStatus.ACTIVE")
+    @Query("update Task task set task.status = venus.utillibrary.model.api.TaskStatus.OVERDUE " +
+            "where task.dueDate < CURRENT_DATE and task.status = venus.utillibrary.model.api.TaskStatus.ACTIVE")
     fun overdueTasks() : Int
 
     //TODO integration test

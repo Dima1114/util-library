@@ -1,6 +1,5 @@
 package venus.utillibrary.model.api
 
-import api.entity.TaskStatus
 import org.springframework.data.annotation.CreatedBy
 import venus.utillibrary.model.base.BaseEntity
 import venus.utillibrary.model.base.Role

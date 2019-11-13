@@ -1,6 +1,6 @@
 package venus.utillibrary.projection.api
 
-import api.entity.TaskStatus
+import venus.utillibrary.model.api.TaskStatus
 import org.springframework.data.rest.core.config.Projection
 import venus.utillibrary.model.api.Task
 import venus.utillibrary.model.api.TaskType
