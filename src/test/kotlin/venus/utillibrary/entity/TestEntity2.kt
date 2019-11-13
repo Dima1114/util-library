@@ -1,6 +1,5 @@
-package api.entity
+package venus.utillibrary.entity
 
-import venus.utillibrary.entity.TestEnum
 import java.time.LocalDateTime
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue

@@ -5,4 +5,4 @@ pluginManagement {
 }
 rootProject.name = "util-library"
 
-includeBuild ("../search-core")
+//includeBuild ("../search-core")

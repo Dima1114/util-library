@@ -1,6 +1,5 @@
 package venus.utillibrary.entity
 
-import api.entity.TestEntity2
 import venus.searchcore.validation.Unique
 import venus.utillibrary.model.base.BaseEntity
 import java.time.LocalDate

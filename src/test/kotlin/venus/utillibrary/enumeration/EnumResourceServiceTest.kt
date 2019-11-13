@@ -1,4 +1,4 @@
-package venus.utillibrary.search.enumeration
+package venus.utillibrary.enumeration
 
 import org.amshove.kluent.`should be equal to`
 import org.amshove.kluent.`should contain`
@@ -8,10 +8,6 @@ import org.junit.Before
 import org.junit.Test
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.context.SecurityContextHolder
-import venus.utillibrary.enumeration.EnumResource
-import venus.utillibrary.enumeration.EnumResourceService
-import venus.utillibrary.enumeration.EnumResourceServiceImpl
-import venus.utillibrary.enumeration.EnumValue
 import venus.utillibrary.model.base.Role
 import venus.utillibrary.security.JwtUserDetails
 
@@ -21,7 +17,7 @@ class EnumResourceServiceTest{
 
     @Before
     fun setUp(){
-        enumResourceService = EnumResourceServiceImpl("venus/utillibrary/search")
+        enumResourceService = EnumResourceServiceImpl("venus/utillibrary")
     }
 
     @After

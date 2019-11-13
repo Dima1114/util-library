@@ -1,4 +1,4 @@
-package venus.utillibrary.search.enumeration
+package venus.utillibrary.enumeration
 
 import venus.utillibrary.security.exceptions.JwtAuthenticationException
 import com.nhaarman.mockitokotlin2.whenever
@@ -14,9 +14,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
-import venus.utillibrary.enumeration.EnumResourceController
-import venus.utillibrary.enumeration.EnumResourceService
-import venus.utillibrary.enumeration.EnumValue
 import venus.utillibrary.enumeration.exception.ResourceNotFoundException
 import venus.utillibrary.handler.RestResponseEntityExceptionHandler
 
